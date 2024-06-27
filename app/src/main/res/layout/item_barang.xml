@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="180dp"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="8dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="8dp"
+    android:background="?attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/barangImageView"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            tools:src="@tools:sample/avatars"
+            android:contentDescription="@string/barang_image_desc"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/barangNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/barang_name"
+            android:textSize="18sp"
+            android:textColor="@color/primary_text_color"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:id="@+id/priceTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/price"
+            android:textSize="14sp"
+            android:textColor="@color/primary_text_color"
+            android:layout_marginBottom="2dp" />
+
+        <TextView
+            android:id="@+id/stockTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/stock"
+            android:textSize="14sp"
+            android:textColor="@color/primary_text_color" />
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

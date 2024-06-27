@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">BetaMart</string>
+    <string name="title_home">Home</string>
+    <string name="title_histori">Histori</string>
+    <string name="title_user">User</string>
+    <string name="ip_address">192.168.88.5</string>
+    <string name="logo_desc">BetaMart Logo</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="login_title">Login to BookMart</string>
+    <string name="email_hint">Email</string>
+    <string name="already_have_account">Already have an account? Login</string>
+    <string name="register_title">Register to BetaMart</string>
+    <string name="barang_image_desc">Barang Image</string>
+    <string name="barang_name">Barang Name</string>
+    <string name="author">Author</string>
+    <string name="publisher">Publisher</string>
+    <string name="price">Price</string>
+    <string name="stock">Stock</string>
+</resources>

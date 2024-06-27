@@ -1,0 +1,119 @@
+<!-- activity_pemesanan.xml -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Nama Buku -->
+        <TextView
+            android:id="@+id/tv_nama_buku"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Buku"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:paddingBottom="8dp" />
+
+        <!-- Nama Penerima -->
+        <EditText
+            android:id="@+id/et_nama_penerima"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Penerima"
+            android:textColorHint="@color/secondary_text_color"
+            android:inputType="textPersonName"
+            android:paddingBottom="16dp" />
+
+        <!-- Jumlah Pesanan -->
+        <TextView
+            android:id="@+id/tv_jumlah_pesanan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jumlah Pesanan: 0"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:paddingBottom="8dp" />
+
+        <!-- Tombol untuk Mengatur Jumlah Pesanan -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/btn_minus"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:text="-"
+                android:textSize="24sp"
+                android:onClick="decrementQuantity" />
+
+            <TextView
+                android:id="@+id/tv_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:paddingHorizontal="16dp" />
+
+            <Button
+                android:id="@+id/btn_plus"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:text="+"
+                android:textSize="24sp"
+                android:onClick="incrementQuantity" />
+
+        </LinearLayout>
+
+        <!-- Alamat -->
+        <EditText
+            android:id="@+id/et_alamat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Alamat Pengiriman"
+            android:textColorHint="@color/secondary_text_color"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:gravity="top"
+            android:paddingBottom="16dp" />
+
+        <!-- Nomor HP -->
+        <EditText
+            android:id="@+id/et_nomor_hp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nomor HP"
+            android:textColorHint="@color/secondary_text_color"
+            android:inputType="phone"
+            android:paddingBottom="16dp" />
+
+        <!-- Jumlah yang Harus Dibayarkan -->
+        <TextView
+            android:id="@+id/tv_total_pembayaran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Pembayaran: Rp 0"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:paddingBottom="16dp" />
+
+        <!-- Tombol Pesan -->
+        <Button
+            android:id="@+id/btn_pesan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pesan"
+            android:textSize="18sp"
+            android:onClick="pesanBuku"
+            android:background="@drawable/rounded_button"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</ScrollView>
